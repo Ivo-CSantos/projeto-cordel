@@ -1,24 +1,25 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: passion;
-  src: url(../fontes/0nkrC9D4IuYBgWcI9NbfTwE.woff2);
-}
-@font-face {
-  font-family: sriracha;
-  src: url(../fontes/Pby6FmL8HhTPqbjUzux3JEMq007vyJc.woff2);
-}
-:root {
-  --fonte-header: sriracha;
-  --fonte-poema: passion;
-}
-html {
+* {
   margin: 0;
-}
-body {
-  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+header {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header h1 {
+  font-size: 9vw;
+  font-variant: small-caps;
+}
+header p {
+  padding-top: 20px;
+}
 a {
   text-decoration: inherit;
   color: white;
@@ -28,72 +29,49 @@ a:hover {
   text-decoration: underline;
 }
 
-header h1 {
-  margin: 20px;
-  font-family: var(--fonte-header);
-  font-size: 7vw;
-  font-weight: 400;
-  padding: 30px;
-  margin: 0;
+section {
+  font-size: 4vw;
+  font-family: cursive;
 }
-header p {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-  margin-bottom: 50px;
-  position: relative;
-  bottom: 35px;
-  letter-spacing: 1.5px;
+section p {
+  margin: 50px 0px 75px 20px;
 }
-
-header {
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-
-article p {
-  font-family: var(--fonte-poema);
-}
-
-article {
-  font-size: 3.8vw;
-  margin-left: 0.5em;
-}
-
-div.imgfundo1 {
+section.imagem1 {
   background-image: url(../imagens/background001.jpg);
-  background-position: center center;
   background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   padding: 10px;
+  box-shadow: 0px -3px 10px 1px rgba(0, 0, 0, 0.281);
 }
-div.imgfundo2 {
-  background-image: url(../imagens/background002.jpg);
-  background-position: center center;
-  background-attachment: fixed;
-  padding: 10px;
-}
-
-p.fundocinza {
-  background-color: rgba(0, 0, 0, 0.596);
+section.imagem1 p {
+  margin: 10px;
+  padding: 20px;
+  width: 65%;
   color: white;
-  padding: 10px;
-  width: 45vw;
+  background-color: rgba(0, 0, 0, 0.493);
 }
 
-span {
-  font-size: 10vw;
+section.imagem2 {
+  background-image: url(../imagens/background002.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  box-shadow: 0px -3px 10px 1px rgba(0, 0, 0, 0.281);
+}
+section.imagem2 p {
+  padding: 20px;
+  margin: 10px;
+  width: 65%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.493);
 }
 
 footer {
   background-color: black;
-  color: white;
   text-align: center;
-  padding: 5px;
-}
-
-footer p {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1em;
-  padding: 5px;
+  color: white;
+  padding: 10px;
+  margin-top: 100px;
 }
