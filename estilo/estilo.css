@@ -1,9 +1,38 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap");
+.passion-one-regular {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.passion-one-bold {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.passion-one-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.sriracha-regular {
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* -------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --fonte-poema: Sriracha;
+  --fonte-padrao: Passion One;
 }
 
 header {
@@ -11,14 +40,15 @@ header {
   background-color: black;
   color: white;
   padding: 50px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 header h1 {
-  font-size: 9vw;
+  font-family: var(--fonte-padrao);
+  font-size: 12vw;
   font-variant: small-caps;
 }
 header p {
   padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 a {
   text-decoration: inherit;
@@ -32,6 +62,7 @@ a:hover {
 section {
   font-size: 4vw;
   font-family: cursive;
+  font-family: var(--fonte-poema);
 }
 section p {
   margin: 50px 0px 75px 20px;
@@ -45,10 +76,13 @@ section.imagem1 {
   box-shadow: 0px -3px 10px 1px rgba(0, 0, 0, 0.281);
 }
 section.imagem1 p {
+  display: inline-block;
   margin: 10px;
-  padding: 20px;
-  width: 65%;
+  padding: 5px;
+  width: 55%;
+  white-space: nowrap;
   color: white;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.363);
   background-color: rgba(0, 0, 0, 0.493);
 }
 
