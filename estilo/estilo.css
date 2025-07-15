@@ -7,17 +7,6 @@
   font-style: normal;
 }
 
-.passion-one-bold {
-  font-family: "Passion One", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.passion-one-black {
-  font-family: "Passion One", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
 .sriracha-regular {
   font-family: "Sriracha", cursive;
   font-weight: 400;
@@ -31,81 +20,78 @@
 }
 
 :root {
-  --fonte-poema: Sriracha;
-  --fonte-padrao: Passion One;
+  --fonte1: Sriracha;
+  --fonte2: Passion One;
+  --fonte3: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+  min-height: 100vh;
 }
 
 header {
   text-align: center;
   background-color: black;
   color: white;
-  padding: 50px;
+  padding-top: 50px;
 }
 header h1 {
-  font-family: var(--fonte-padrao);
+  font-family: var(--fonte2);
   font-size: 12vw;
   font-variant: small-caps;
 }
 header p {
-  padding-top: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 50px;
+  font-family: var(--fonte3);
 }
+
 a {
   text-decoration: inherit;
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
 }
 a:hover {
   text-decoration: underline;
 }
 
 section {
-  font-size: 4vw;
+  font-size: 3.5vw;
   font-family: cursive;
-  font-family: var(--fonte-poema);
+  font-family: var(--fonte1);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
 }
 section p {
-  margin: 50px 0px 75px 20px;
+  margin-left: 20px;
+  padding-bottom: 2em;
 }
-section.imagem1 {
-  background-image: url(../imagens/background001.jpg);
+section.imagem {
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.548);
   background-attachment: fixed;
-  background-position: center;
+  background-position: right center;
   background-size: cover;
-  padding: 10px;
-  box-shadow: 0px -3px 10px 1px rgba(0, 0, 0, 0.281);
 }
-section.imagem1 p {
+section.imagem#img01 {
+  background-image: url(../imagens/background001.jpg);
+}
+section.imagem p {
   display: inline-block;
-  margin: 10px;
-  padding: 5px;
-  width: 55%;
-  white-space: nowrap;
+  padding: 20px;
   color: white;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.363);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.363);
   background-color: rgba(0, 0, 0, 0.493);
 }
 
-section.imagem2 {
+section.imagem#img02 {
   background-image: url(../imagens/background002.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  padding: 10px;
-  box-shadow: 0px -3px 10px 1px rgba(0, 0, 0, 0.281);
-}
-section.imagem2 p {
-  padding: 20px;
-  margin: 10px;
-  width: 65%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.493);
 }
 
 footer {
+  font-family: var(--fonte3);
   background-color: black;
   text-align: center;
   color: white;
   padding: 10px;
-  margin-top: 100px;
 }
